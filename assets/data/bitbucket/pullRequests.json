@@ -1,0 +1,50 @@
+{
+  "names": [
+    "BG-218 Fix escape pod",
+    "Open the pod bay doors",
+    "IOS-28 Add team size picker to onboarding",
+    "ADR-41 Allow Android phones to override ship navigation",
+    "Make control panel buttons larger",
+    "WEB-914 Add background checks to astronaut application",
+    "Shorten ejector seat activation timing in an emergency!",
+    "Disallow children under 12 for legal reasons",
+    "Take planetary alignment into account",
+    "Merge upstream changes to control panel UI",
+    "Update for SpaceOS 5.2.8",
+    "Bundle interplanetary analytics for improved transmission",
+    "Tighten launch windows",
+    "BG-36 Update 2020 launch schedule",
+    "WEB-920 Added lower bandwidth codecs to the web livestream",
+    "WEB-895 Updated the team page",
+    "SEC-18 Fixes based on audit results",
+    "Hotfix (high-priority)",
+    "AI Security Revamp",
+    "5% fewer explosions",
+    "Use idle time for SETI computations",
+    "2038 Problem Fixes",
+    "Reduce booster pressure for main stage landing",
+    "Alter chemical composition of biofuel orders"
+  ],
+  "linked": [
+    {
+      "name": "Hydroponics Subsystem Updates",
+      "description": "The previous hydroponics system wasn't acccounting for slight changes in gravity on the habitation ring plans. This one should account for any gyroscopic tilt that is induced by the station and will ensure that water is still evenly distributed during ring spin ups / spin downs. Simulation testing is looking good and all tests are passing."
+    },
+    {
+      "name": "IOS-28 Add team size picker to onboarding",
+      "description": "New users should receive different experiences based on their team size, since it's a qualitiative change in how we treat them. To make that happen, we ask users for their team size in the onboarding process. This PR also pings us when a user credibly registers a team of 50+ so we can dispatch a support specialist."
+    },
+    {
+      "name": "Bundle interplanetary analytics for improved transmission",
+      "description": "Sending out analytics can be a real burden -- we don't want to transmit non-critical data when more important information is being processed, so we have a priority scheduler in place. Unfortunately, this means that analytics almost never actually get sent, because their payloads are very common. This PR bundles analytics payloads over time and intelligently queries the scheduler for the appropriate times to send out."
+    },
+    {
+      "name": "WEB-914 Add background checks to astronaut application",
+      "description": "While we currently have an extensive background check process for astronauts who make it past the application stage, we often end up with a number of poor-quality applications that we are legally unable to consider. With this update, the web form automatically queries the appropriate APIs to filter out applicants who might lead to future problems..."
+    },
+    {
+      "name": "SEC-18 Fixes based on audit results",
+      "description": "The major component of this is to update a lot of our dependencies, and switch to dependencies without known vulnerabilities. We're working with the data team now to ensure our database pipeline is secure."
+    }
+  ]
+}

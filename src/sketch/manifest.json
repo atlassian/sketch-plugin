@@ -1,0 +1,289 @@
+{
+  "name": "Atlassian Vendor Sketch Plugin",
+  "identifier": "com.atlassian.vendor.sketch.plugin",
+  "description": "Design your next Atlassian app with our component libraries and suite of Sketch tools.",
+  "version": "1.0.0",
+  "icon": "logo.png",
+  "appcast": "https://ecosystem.atlassian.design/tools/sketch/plugin/appcast.xml",
+  "suppliesData": true,
+  "analyticsCode": "UA-118074676-3",
+  "urlBase": "https://ecosystem.atlassian.design/tools/sketch",
+  "menu": {
+    "title": "💎 Atlassian Vendor Sketch Plugin",
+    "items": [
+      "symbol-palette",
+      "-",
+      {
+        "title": "Support",
+        "items": [
+          "link-file-a-bug",
+          "-",
+          "sync-gui-pack",
+          "force-sync-gui-pack",
+          "force-install-fonts",
+          "-",
+          "link-design-site",
+          "link-atlaskit-site"
+        ]
+      }
+    ]
+  },
+  "commands": [
+    {
+      "name": "Atlassian Design Website",
+      "identifier": "link-design-site",
+      "script": "handler/menu/links.js",
+      "handler": "linkAtlassianDesignSite"
+    },
+    {
+      "name": "Atlaskit Website",
+      "identifier": "link-atlaskit-site",
+      "script": "handler/menu/links.js",
+      "handler": "linkAtlaskitSite"
+    },
+    {
+      "name": "Open an Issue on GitHub",
+      "identifier": "link-file-a-bug",
+      "script": "handler/menu/links.js",
+      "handler": "linkGitHubIssue"
+    },
+    {
+      "name": "Synchronise GUI Pack",
+      "identifier": "sync-gui-pack",
+      "script": "handler/gui-pack/syncGuiPack.js",
+      "handlers": {
+        "run": "syncGuiPackWithAnalytics",
+        "actions": {
+          "OpenDocument": "default",
+          "HandleURL": "syncGuiPackWithAnalytics"
+        }
+      }
+    },
+    {
+      "name": "Force Synchronise GUI Pack",
+      "identifier": "force-sync-gui-pack",
+      "script": "handler/gui-pack/syncGuiPack.js",
+      "handlers": {
+        "run": "forceSyncGuiPack",
+        "actions": {
+          "HandleURL": "forceSyncGuiPack"
+        }
+      }
+    },
+    {
+      "name": "Symbol Palette...",
+      "identifier": "symbol-palette",
+      "script": "handler/symbol-palette/launchWebView.js",
+      "handlers": {
+        "run": "default",
+        "actions": {
+          "Startup": "onStartup"
+        }
+      },
+      "shortcut": "cmd shift p"
+    },
+    {
+      "name": "Force Install Fonts...",
+      "identifier": "force-install-fonts",
+      "script": "handler/fonts/installFonts.js",
+      "handlers": {
+        "run": "forceInstallFonts",
+        "actions": {
+          "Startup": "default",
+          "HandleURL": "forceInstallFonts"
+        }
+      }
+    },
+    {
+      "script": "handler/data/supplyData.js",
+      "handlers": {
+        "actions": {
+          "Shutdown": "onShutdown"
+        }
+      }
+    },
+    {
+      "script": "handler/data/genericSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyDate": "onSupplyDate",
+          "SupplyVersionNumber": "onSupplyVersionNumber"
+        }
+      }
+    },
+    {
+      "script": "handler/data/bitbucket/bitbucketProjectSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyBitbucketProjectAvatar": "onSupplyBitbucketProjectAvatar",
+          "SupplyBitbucketProjectName": "onSupplyBitbucketProjectName",
+          "SupplyBitbucketProjectKey": "onSupplyBitbucketProjectKey",
+          "SupplyBitbucketProjectImage": "onSupplyBitbucketProjectImage",
+          "SupplyBitbucketProjectText": "onSupplyBitbucketProjectText"
+        }
+      }
+    },
+    {
+      "script": "handler/data/bitbucket/repositorySupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyBitbucketRepositoryName": "onSupplyBitbucketRepositoryName"
+        }
+      }
+    },
+    {
+      "script": "handler/data/bitbucket/branchSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyBitbucketBranchName": "onSupplyBitbucketBranchName"
+        }
+      }
+    },
+    {
+      "script": "handler/data/bitbucket/commitSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyBitbucketCommitName": "onSupplyBitbucketCommitName"
+        }
+      }
+    },
+    {
+      "script": "handler/data/bitbucket/pullRequestSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyBitbucketPullRequestName": "onSupplyBitbucketPullRequestName",
+          "SupplyBitbucketPullRequestDescription": "onSupplyBitbucketPullRequestDescription",
+          "SupplyBitbucketPullRequestText": "onSupplyBitbucketPullRequestText"
+        }
+      }
+    },
+    {
+      "script": "handler/data/confluence/pageSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyConfluencePageTitle": "onSupplyConfluencePageTitle",
+          "SupplyConfluencePageBody": "onSupplyConfluencePageBody",
+          "SupplyConfluencePageText": "onSupplyConfluencePageText"
+        }
+      }
+    },
+    {
+      "script": "handler/data/confluence/spaceSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyConfluenceSpaceAvatarGlobal": "onSupplyConfluenceSpaceAvatarGlobal",
+          "SupplyConfluenceSpaceAvatarPersonal": "onSupplyConfluenceSpaceAvatarPersonal",
+          "SupplyConfluenceSpaceAvatarMeeple": "onSupplyConfluenceSpaceAvatarMeeple",
+          "SupplyConfluenceSpaceNameGlobal": "onSupplyConfluenceSpaceNameGlobal",
+          "SupplyConfluenceSpaceNamePersonal": "onSupplyConfluenceSpaceNamePersonal",
+          "SupplyConfluenceSpaceKeyGlobal": "onSupplyConfluenceSpaceKeyGlobal",
+          "SupplyConfluenceSpaceKeyPersonal": "onSupplyConfluenceSpaceKeyPersonal",
+          "SupplyConfluenceSpaceGlobalImage": "onSupplyConfluenceSpaceGlobalImage",
+          "SupplyConfluenceSpaceGlobalText": "onSupplyConfluenceSpaceGlobalText",
+          "SupplyConfluenceSpacePersonalImage": "onSupplyConfluenceSpacePersonalImage",
+          "SupplyConfluenceSpacePersonalText": "onSupplyConfluenceSpacePersonalText",
+          "SupplyConfluenceSpaceMeepleImage": "onSupplyConfluenceSpaceMeepleImage",
+          "SupplyConfluenceSpaceMeepleText": "onSupplyConfluenceSpaceMeepleText"
+        }
+      }
+    },
+    {
+      "script": "handler/data/jira/componentSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyJiraComponentName": "onSupplyJiraComponentName",
+          "SupplyJiraComponentDescription": "onSupplyJiraComponentDescription"
+        }
+      }
+    },
+    {
+      "script": "handler/data/jira/issueSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyJiraIssueTypeIcon": "onSupplyJiraIssueTypeIcon",
+          "SupplyJiraIssuePriorityIcon": "onSupplyJiraIssuePriorityIcon",
+          "SupplyJiraIssueSummary": "onSupplyJiraIssueSummary",
+          "SupplyJiraIssueKey": "onSupplyJiraIssueKey",
+          "SupplyJiraIssueDescription": "onSupplyJiraIssueDescription",
+          "SupplyJiraIssueStatus": "onSupplyJiraIssueStatus",
+          "SupplyJiraIssueTypeName": "onSupplyJiraIssueTypeName",
+          "SupplyJiraIssuePriorityName": "onSupplyJiraIssuePriorityName",
+          "SupplyJiraIssueResolution": "onSupplyJiraIssueResolution",
+          "SupplyJiraIssueImage": "onSupplyJiraIssueImage",
+          "SupplyJiraIssueText": "onSupplyJiraIssueText"
+        }
+      }
+    },
+    {
+      "script": "handler/data/jira/jiraProjectSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyJiraProjectAvatar": "onSupplyJiraProjectAvatar",
+          "SupplyJiraProjectTypeIcon": "onSupplyJiraProjectTypeIcon",
+          "SupplyJiraProjectName": "onSupplyJiraProjectName",
+          "SupplyJiraProjectKey": "onSupplyJiraProjectKey",
+          "SupplyJiraProjectTypeName": "onSupplyJiraProjectTypeName",
+          "SupplyJiraProjectImage": "onSupplyJiraProjectImage",
+          "SupplyJiraProjectText": "onSupplyJiraProjectText"
+        }
+      }
+    },
+    {
+      "script": "handler/data/user/userSupplier.js",
+      "handlers": {
+        "actions": {
+          "Startup": "onStartup",
+          "SupplyUserAvatarHuman": "onSupplyUserAvatarHuman",
+          "SupplyUserNameHuman": "onSupplyUserNameHuman",
+          "SupplyUserUsernameHuman": "onSupplyUserUsernameHuman",
+          "SupplyUserHandleHuman": "onSupplyUserHandleHuman",
+          "SupplyUserEmailHuman": "onSupplyUserEmailHuman",
+          "SupplyUserImageHuman": "onSupplyUserImageHuman",
+          "SupplyUserTextHuman": "onSupplyUserTextHuman",
+          "SupplyUserAvatarMeeple": "onSupplyUserAvatarMeeple",
+          "SupplyUserImageMeeple": "onSupplyUserImageMeeple",
+          "SupplyUserTextMeeple": "onSupplyUserTextMeeple"
+        }
+      }
+    },
+    {
+      "script": "handler/analytics/openListener.js",
+      "handlers": {
+        "actions": {
+          "OpenDocument": "onOpenDocument",
+          "CloseDocument": "onCloseDocument"
+        }
+      }
+    },
+    {
+      "script": "handler/analytics/symbolListener.js",
+      "handlers": {
+        "actions": {
+          "HandlerLostFocus": "onHandlerLostFocus",
+          "UnlinkFromLibrary": "onUnlinkFromLibrary",
+          "ConvertSymbolOrDetachInstances.begin": "onConvertSymbolOrDetachInstances"
+        }
+      }
+    },
+    {
+      "script": "handler/analytics/styleListener.js",
+      "handlers": {
+        "actions": {
+          "ApplySharedLayerStyle.finish": "onApplySharedLayerStyle",
+          "ApplySharedTextStyle.finish": "onApplySharedTextStyle"
+        }
+      }
+    }
+  ]
+}

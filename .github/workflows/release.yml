@@ -1,0 +1,51 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  ecosystem:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Add secret key
+        run: |
+          echo "${{ secrets.REMOTE_SSH_PRIVATE_KEY }}" > id_rsa
+          chmod 600 id_rsa
+      - name: Yarn install
+        run: yarn
+      - name: Update RSS file
+        run: |
+          yarn generateRss
+          sh -c "rsync --quiet -e 'ssh -o StrictHostKeyChecking=no -i id_rsa' appcast.xml '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH_BASE_ECOSYSTEM }}/plugin/'"
+      - name: Build plugin
+        run: |
+          yarn buildProd
+          zip -r plugin.zip atlassian-sketch-plugin.sketchplugin
+          sh -c "rsync --quiet -e 'ssh -o StrictHostKeyChecking=no -i id_rsa' plugin.zip '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH_BASE_ECOSYSTEM }}/plugin/'"
+  internal:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v1
+      - name: Add secret key
+        run: |
+          echo "${{ secrets.REMOTE_SSH_PRIVATE_KEY }}" > id_rsa
+          chmod 600 id_rsa
+      - name: Yarn install
+        run: yarn
+      - name: Download internal manifest.json
+        run: |
+          curl -o src/sketch/manifest.json --header 'Authorization: token ${{ secrets.GITHUB_ORG_TOKEN }}' --header 'Accept: application/vnd.github.v3.raw' --remote-name --location https://api.github.com/repos/atlassian/sketch-plugin-internal/contents/manifest.json
+      - name: Update RSS file
+        run: |
+          yarn generateRss
+          sh -c "rsync --quiet -e 'ssh -o StrictHostKeyChecking=no -i id_rsa' appcast.xml '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH_BASE_ECOSYSTEM }}/plugin/'"
+      - name: Build plugin
+        run: |
+          yarn buildProd
+          zip -r plugin.zip atlassian-sketch-plugin.sketchplugin
+          sh -c "rsync --quiet -e 'ssh -o StrictHostKeyChecking=no -i id_rsa' plugin.zip '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH_BASE_ECOSYSTEM }}/plugin/'"

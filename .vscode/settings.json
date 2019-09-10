@@ -1,0 +1,28 @@
+{
+  // formatting/linting
+  "editor.formatOnSave": true,
+  "editor.rulers": [100],
+  "eslint.packageManager": "yarn",
+  "eslint.autoFixOnSave": true,
+  "javascript.validate.enable": false,
+  "typescript.validate.enable": false,
+  "[javascript]": {
+    // eslint.autoFixOnSave will handle this
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.formatOnPaste": false
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // editorconfig
+  "files.encoding": "utf8",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  // other
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "search.exclude": {
+    "*.sketchplugin/**/*": true
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "key": "CS",
+    "name": "Customer Support"
+  },
+  {
+    "key": "DMS",
+    "name": "Digital Marketing Support"
+  },
+  {
+    "key": "FWS",
+    "name": "Facilities Workplace Support"
+  },
+  {
+    "key": "IKB",
+    "name": "IT Knowledge Base"
+  },
+  {
+    "key": "ITOPS",
+    "name": "IT Operations"
+  },
+  {
+    "key": "IS",
+    "name": "IT Support"
+  },
+  {
+    "key": "ICM",
+    "name": "Infrastructure Change Management"
+  },
+  {
+    "key": "SOPS",
+    "name": "Sales Ops"
+  },
+  {
+    "key": "BG",
+    "name": "Beyond Gravity"
+  },
+  {
+    "key": "TRS",
+    "name": "Travel & Relocation Support"
+  },
+  {
+    "key": "WKS",
+    "name": "Workplace Support"
+  }
+]

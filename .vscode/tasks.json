@@ -1,0 +1,108 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "osx": {
+    "options": {
+      "env": {
+        "PATH": "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/Library/Apple/bin"
+      }
+    }
+  },
+  "tasks": [
+    {
+      "label": "Build (Dev)",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["buildDev"],
+      "group": "build",
+      "presentation": {
+        "focus": false,
+        "reveal": "silent",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (Prod)",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["buildProd"],
+      "group": "build",
+      "presentation": {
+        "focus": false,
+        "reveal": "silent",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Build (Watch)",
+      "type": "shell",
+      "command": "yarn",
+      "args": ["buildWatch"],
+      "group": "build",
+      "isBackground": true,
+      "presentation": {
+        "group": "main",
+        "focus": false,
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Clean",
+      "type": "shell",
+      "command": "rm",
+      "args": ["-rf", "*.sketchplugin/"],
+      "presentation": {
+        "focus": false,
+        "reveal": "silent",
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Logs",
+      "type": "shell",
+      "command": "skpm",
+      "args": ["log"],
+      "group": "test",
+      "presentation": {
+        "focus": false,
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Logs (Watch)",
+      "type": "shell",
+      "command": "skpm",
+      "args": ["log", "-f"],
+      "group": "test",
+      "isBackground": true,
+      "presentation": {
+        "group": "main",
+        "focus": false,
+        "showReuseMessage": false,
+        "clear": false
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Start (Watch Build & Logs)",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "dependsOn": ["Build (Watch)", "Logs (Watch)"],
+      "dependsOrder": "parallel",
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "Print to console": {
+    "scope": "javascript,javascriptreact",
+    "prefix": "log",
+    "body": ["log(`DEBUG: ${$1}`);", "$0"],
+    "description": "Log output to console"
+  },
+  "Symbol Palette Symbol": {
+    "scope": "json",
+    "prefix": "symbol",
+    "body": [
+      "{",
+      "\t\"name\": \"$1\",",
+      "\t\"description\": \"$2\",",
+      "\t\"libraryName\": \"$3\",",
+      "\t\"symbolName\": \"$4\"",
+      "},$0"
+    ],
+    "description": "An entry in the Symbol Palette JSON file."
+  },
+  "Data / User": {
+    "scope": "json",
+    "prefix": "user",
+    "body": ["{", "\t\"name\": \"$1\",", "\t\"username\": \"$2\"", "},$0"],
+    "description": "A user (human or meeple) for Data Suppliers."
+  }
+}

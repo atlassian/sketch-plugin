@@ -1,0 +1,46 @@
+[
+  {
+    "name": "Accomodations",
+    "description": "Issues concerning hotels, motels, and other accomodations in space"
+  },
+  {
+    "name": "Deals and Offers",
+    "description": "All discounts related to parties less than 8"
+  },
+  {
+    "name": "Local Transportation",
+    "description": "Issues concerning all hired local travel"
+  },
+  {
+    "name": "Mobile Apps",
+    "description": "All iOS and Android specific issues"
+  },
+  {
+    "name": "Office Support",
+    "description": "Internal Office Items"
+  },
+  {
+    "name": "Payments",
+    "description": "Cash, check, and credit card processing"
+  },
+  {
+    "name": "Remote APIs",
+    "description": "Remote access to our platform for our travel partners"
+  },
+  {
+    "name": "Space Travel",
+    "description": "Issues concerning intergalaxy travel providers"
+  },
+  {
+    "name": "Suggestions",
+    "description": "Suggestions on where to travel in the Solar System"
+  },
+  {
+    "name": "User Profiles",
+    "description": "All stored information about a traveler including past and future trips"
+  },
+  {
+    "name": "Web Site",
+    "description": "Issues concerning the consumer website from the PC"
+  }
+]

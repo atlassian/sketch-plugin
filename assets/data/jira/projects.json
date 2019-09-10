@@ -1,0 +1,152 @@
+[
+  {
+    "key": "ADR",
+    "name": "Android App",
+    "typeName": "Software",
+    "typeIcon": "software"
+  },
+  {
+    "key": "CS",
+    "name": "Customer Support",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "DMS",
+    "name": "Digital Marketing Support",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "EO",
+    "name": "Employee Onboarding",
+    "typeName": "Business",
+    "typeIcon": "business"
+  },
+  {
+    "key": "FWS",
+    "name": "Facilities Support",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "FIN",
+    "name": "Finance Service Desk",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "FME",
+    "name": "Financial Month End",
+    "typeName": "Business",
+    "typeIcon": "business"
+  },
+  {
+    "key": "HCT",
+    "name": "HR Candidate Tracking",
+    "typeName": "Business",
+    "typeIcon": "business"
+  },
+  {
+    "key": "HR",
+    "name": "HR Service Desk",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "ICM",
+    "name": "Infrastructure Change Management",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "IOS",
+    "name": "iOS App ",
+    "typeName": "Software",
+    "typeIcon": "software"
+  },
+  {
+    "key": "ITOPS",
+    "name": "IT Operations",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "ITS",
+    "name": "IT Support",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "LEGT",
+    "name": "Legal Service Desk",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "MB",
+    "name": "Marketing Blog",
+    "typeName": "Business",
+    "typeIcon": "business"
+  },
+  {
+    "key": "MAC",
+    "name": "Marketing Creatives",
+    "typeName": "Business",
+    "typeIcon": "business"
+  },
+  {
+    "key": "OA",
+    "name": "Office Admin Service Desk",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "PERF",
+    "name": "Performance Engineering",
+    "typeName": "Software",
+    "typeIcon": "software"
+  },
+  {
+    "key": "PLAT",
+    "name": "Platform",
+    "typeName": "Software",
+    "typeIcon": "software"
+  },
+  {
+    "key": "PM",
+    "name": "Portfolio Management",
+    "typeName": "Software",
+    "typeIcon": "software"
+  },
+  {
+    "key": "SOPS",
+    "name": "Sales Ops",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "WEB",
+    "name": "Team Travel Web",
+    "typeName": "Software",
+    "typeIcon": "software"
+  },
+  {
+    "key": "BG",
+    "name": "Beyond Gravity",
+    "typeName": "Software",
+    "typeIcon": "software"
+  },
+  {
+    "key": "TRS",
+    "name": "Travel & Relocation Support",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  },
+  {
+    "key": "TSD",
+    "name": "Travel Service Desk",
+    "typeName": "Service Desk",
+    "typeIcon": "service-desk"
+  }
+]

@@ -1,0 +1,458 @@
+[
+  {
+    "name": "Button (Standard)",
+    "description": "Use buttons to trigger actions and links.",
+    "libraryName": "ADG Button",
+    "symbolName": "Buttons / [Light] / Standard / Default"
+  },
+  {
+    "name": "Button (Primary)",
+    "description": "Use buttons to trigger actions and links.",
+    "libraryName": "ADG Button",
+    "symbolName": "Buttons / [Light] / Primary / Default"
+  },
+  {
+    "name": "Button (Full width)",
+    "description": "Use buttons to trigger actions and links.",
+    "libraryName": "ADG Button",
+    "symbolName": "Buttons / [Light] / Full width / Default"
+  },
+  {
+    "name": "Button (Compact)",
+    "description": "Use default padding for most use cases, and compact for tables.",
+    "libraryName": "ADG Button",
+    "symbolName": "Buttons / [Light] / Compact / Default"
+  },
+  {
+    "name": "Button (Icon)",
+    "description": "Use buttons to trigger actions and links.",
+    "libraryName": "ADG Button",
+    "symbolName": "Buttons / [Light] / Icon only / Default"
+  },
+  {
+    "name": "Button (With icon)",
+    "description": "Use buttons to trigger actions and links.",
+    "libraryName": "ADG Button",
+    "symbolName": "Buttons / [Light] / Standard with icon / Default"
+  },
+  {
+    "name": "Button (Split)",
+    "description": "Use buttons to trigger actions and links.",
+    "libraryName": "ADG Button",
+    "symbolName": "Buttons / [Light] / Split / Default"
+  },
+  {
+    "name": "Button group",
+    "description": "Use grouped buttons when there is a close relationship between a number of buttons.",
+    "libraryName": "ADG Button",
+    "symbolName": "Buttons / [Light] / Grouped / Default"
+  },
+  {
+    "name": "Avatar (Person)",
+    "description": "Use round avatars to quickly identify users.",
+    "libraryName": "ADG Avatar",
+    "symbolName": "Avatar / Person image / 32px"
+  },
+  {
+    "name": "Avatar (Container)",
+    "description": "Use rounded square avatars to help identify large product entities like projects, spaces, groups, rooms, or repositories.",
+    "libraryName": "ADG Avatar",
+    "symbolName": "Avatar / Container / 32px"
+  },
+  {
+    "name": "Avatar stack",
+    "description": "User avatars can be grouped together in a stack or grid pattern to show multiple contributors.",
+    "libraryName": "ADG Avatar",
+    "symbolName": "Avatar / Group / Stack"
+  },
+  {
+    "name": "Avatar grid",
+    "description": "Use round avatars to quickly identify users.",
+    "libraryName": "ADG Avatar",
+    "symbolName": "Avatar / Group / Grid"
+  },
+  {
+    "name": "Modal dialog",
+    "description": "Use modal dialogs when you need a user response, to reveal critical information, or to show info without losing the overall context of a page.",
+    "libraryName": "ADG Modal dialog",
+    "symbolName": "Modal dialog / Size / Small - 400"
+  },
+  {
+    "name": "Blanket",
+    "description": "Blanket provides the overlay layer for components such as a modal dialog or a tooltip.",
+    "libraryName": "ADG Modal dialog",
+    "symbolName": "Modal dialog / Blanket"
+  },
+  {
+    "name": "Select (40px)",
+    "description": "Use selects to allow users to search and select options from a list.",
+    "libraryName": "ADG Select",
+    "symbolName": "Selects / Base / 40px Default"
+  },
+  {
+    "name": "Select (32px)",
+    "description": "Use selects to allow users to search and select options from a list.",
+    "libraryName": "ADG Select",
+    "symbolName": "Selects / Base / 32px Default"
+  },
+  {
+    "name": "Select menu",
+    "description": "An open select menu.",
+    "libraryName": "ADG Select",
+    "symbolName": "Selects / Menu / Text"
+  },
+  {
+    "name": "Cursor (Hand)",
+    "description": "",
+    "libraryName": "ADG Cursor",
+    "symbolName": "Cursors / Hand (Pointing)"
+  },
+  {
+    "name": "Cursor (Pointer)",
+    "description": "",
+    "libraryName": "ADG Cursor",
+    "symbolName": "Cursors / Default"
+  },
+  {
+    "name": "Lozenge",
+    "description": "Use lozenges to highlight an item's status for quick recognition.",
+    "libraryName": "ADG Lozenge",
+    "symbolName": "Lozenges / Subtle / Neutral"
+  },
+  {
+    "name": "Text field (32px)",
+    "description": "Use text fields in forms to help people enter, select, and search for text.",
+    "libraryName": "ADG Text field",
+    "symbolName": "Text field / Base / 32px Default"
+  },
+  {
+    "name": "Text field (40px)",
+    "description": "Use text fields in forms to help people enter, select, and search for text.",
+    "libraryName": "ADG Text field",
+    "symbolName": "Text field / Base / 40px Default"
+  },
+  {
+    "name": "Text field (Search)",
+    "description": "Use text fields in forms to help people enter, select, and search for text.",
+    "libraryName": "ADG Text field",
+    "symbolName": "Text field / Search field"
+  },
+  {
+    "name": "Text field (32px with helper)",
+    "description": "Use text fields in forms to help people enter, select, and search for text.",
+    "libraryName": "ADG Text field",
+    "symbolName": "Text field / Base / 32px Default + Helper text"
+  },
+  {
+    "name": "Text field (40px with helper)",
+    "description": "Use text fields in forms to help people enter, select, and search for text.",
+    "libraryName": "ADG Text field",
+    "symbolName": "Text field / Base / 40px Default + Helper text"
+  },
+  {
+    "name": "Text area",
+    "description": "Use the text area field when the field requires a lot of information or a large description.",
+    "libraryName": "ADG Text field",
+    "symbolName": "Text field / Text area field / Default"
+  },
+  {
+    "name": "Table (48px rows)",
+    "description": "Use tables to logically structure content in a grid to make it easier to see relationships and to facilitate understanding.",
+    "libraryName": "ADG Table",
+    "symbolName": "table 48px - Default"
+  },
+  {
+    "name": "Table (40px rows)",
+    "description": "Use tables to logically structure content in a grid to make it easier to see relationships and to facilitate understanding.",
+    "libraryName": "ADG Table",
+    "symbolName": "table 40px - sorting"
+  },
+  {
+    "name": "Dropdown menu",
+    "description": "Use drop-down menus to let users select an action or options from a set of choices.",
+    "libraryName": "ADG Dropdown menu",
+    "symbolName": "Dropdown menu / Default neutral"
+  },
+  {
+    "name": "Dropdown menu (Compact)",
+    "description": "Use drop-down menus to let users select an action or options from a set of choices.",
+    "libraryName": "ADG Dropdown menu",
+    "symbolName": "Dropdown menu / Compact neutral"
+  },
+  {
+    "name": "Global navigation",
+    "description": "Use the global navigation to provide a consistent navigation experience between products.",
+    "libraryName": "ADG Navigation next",
+    "symbolName": "Jira / Global"
+  },
+  {
+    "name": "Navigation next",
+    "description": "Use navigation next to navigate inside of a product.",
+    "libraryName": "ADG Navigation next",
+    "symbolName": "Jira / Product"
+  },
+  {
+    "name": "Flag",
+    "description": "Use flags for messages containing confirmations, alerts, and acknowledgments that require minimal user interaction.",
+    "libraryName": "ADG Flag",
+    "symbolName": "Flags / Normal / Success"
+  },
+  {
+    "name": "Flag (With actions)",
+    "description": "Use flags for messages containing confirmations, alerts, and acknowledgments that require minimal user interaction.",
+    "libraryName": "ADG Flag",
+    "symbolName": "Flags / Normal / Success with actions"
+  },
+  {
+    "name": "Checkbox",
+    "description": "Use checkboxes to allow people to select a number of options.",
+    "libraryName": "ADG Checkbox",
+    "symbolName": "Checkbox label"
+  },
+  {
+    "name": "Checkbox group",
+    "description": "Use checkboxes to allow people to select a number of options.",
+    "libraryName": "ADG Checkbox",
+    "symbolName": "Checkbox group"
+  },
+  {
+    "name": "Section message (No title)",
+    "description": "Section messages are used to alert users that something has happened in a section of the screen.",
+    "libraryName": "ADG Section message",
+    "symbolName": "Section message / Info - no title"
+  },
+  {
+    "name": "Section message (With title)",
+    "description": "Section messages are used to alert users that something has happened in a section of the screen.",
+    "libraryName": "ADG Section message",
+    "symbolName": "Section message / Info - title"
+  },
+  {
+    "name": "Spotlight",
+    "description": "Use to introduce new features and functionality when on-boarding or change-boarding users. ",
+    "libraryName": "ADG Spotlight",
+    "symbolName": "No actions"
+  },
+  {
+    "name": "Spotlight (With cover)",
+    "description": "Use to introduce new features and functionality when on-boarding or change-boarding users. ",
+    "libraryName": "ADG Spotlight",
+    "symbolName": "With cover "
+  },
+  {
+    "name": "Tooltip",
+    "description": "Use tooltips to identify or add a small amount of information to an element.",
+    "libraryName": "ADG Tooltip",
+    "symbolName": "Tooltip / Default"
+  },
+  {
+    "name": "Inline edit",
+    "description": "The inline editor is designed to not stand out as an input when it is not focused or being interacted with.",
+    "libraryName": "ADG Inline edit",
+    "symbolName": "Inline edit / Focus"
+  },
+  {
+    "name": "Inline edit (With icon)",
+    "description": "The inline editor is designed to not stand out as an input when it is not focused or being interacted with.",
+    "libraryName": "ADG Inline edit",
+    "symbolName": "Inline edit with icon / Focus"
+  },
+  {
+    "name": "Tabs",
+    "description": "Tabs are an easy way to organize content by grouping similar information on the same page.",
+    "libraryName": "ADG Tabs",
+    "symbolName": "Tabs / 2 tabs"
+  },
+  {
+    "name": "Tag",
+    "description": "Use tags to visually label UI objects for quick recognition and navigation.",
+    "libraryName": "ADG Tag",
+    "symbolName": "Tags / Normal / Linked tag / Default"
+  },
+  {
+    "name": "Tag (Removable)",
+    "description": "Use tags to visually label UI objects for quick recognition and navigation.",
+    "libraryName": "ADG Tag",
+    "symbolName": "Tags / Normal / Removable linked tag / Default"
+  },
+  {
+    "name": "Tag (Avatar)",
+    "description": "Use tags to visually label UI objects for quick recognition and navigation.",
+    "libraryName": "ADG Tag",
+    "symbolName": "Tags / Avatar round / Linked tag / Default"
+  },
+  {
+    "name": "Tag (Avatar, removable)",
+    "description": "Use tags to visually label UI objects for quick recognition and navigation.",
+    "libraryName": "ADG Tag",
+    "symbolName": "Tags / Avatar round / Removable linked tag / Default"
+  },
+  {
+    "name": "Radio group",
+    "description": "Use radio groups when you want the person to select a single option from a short list.",
+    "libraryName": "ADG Radio",
+    "symbolName": "Radio group"
+  },
+  {
+    "name": "Banner",
+    "description": "Use banners at the top of the screen to display critical messaging about loss of data, functionality, or important site-wide information that affects the user's ability to use the product. ",
+    "libraryName": "ADG Banner",
+    "symbolName": "Banner / Info"
+  },
+  {
+    "name": "User benefit modal",
+    "description": "Use to introduce existing users to a new experience.",
+    "libraryName": "ADG User benefit modal",
+    "symbolName": "User benefit modal / Default"
+  },
+  {
+    "name": "Badge (Double digits)",
+    "description": "Badges contain numeric values and indicate a running tally, such as the number of unread messages in a room.",
+    "libraryName": "ADG Badge",
+    "symbolName": "Badges / Standard / Double digits"
+  },
+  {
+    "name": "Badge (Single digit)",
+    "description": "Badges contain numeric values and indicate a running tally, such as the number of unread messages in a room.",
+    "libraryName": "ADG Badge",
+    "symbolName": "Badges / Standard / Single digit"
+  },
+  {
+    "name": "Badge (Max digits)",
+    "description": "Badges contain numeric values and indicate a running tally, such as the number of unread messages in a room.",
+    "libraryName": "ADG Badge",
+    "symbolName": "Badges / Standard / Max digits"
+  },
+  {
+    "name": "Mention",
+    "description": "Used to @mention a user in a text field or form.",
+    "libraryName": "ADG Mention",
+    "symbolName": "Mention - Other Person / Default"
+  },
+  {
+    "name": "Page header (Full)",
+    "description": "The page header is a pattern that helps define the uppermost part a webpage or product.",
+    "libraryName": "ADG Page header",
+    "symbolName": "Page-header / Title with breadcrumb and bottom bar [144px H]"
+  },
+  {
+    "name": "Page header (Title with actions)",
+    "description": "The page header is a pattern that helps define the uppermost part a webpage or product.",
+    "libraryName": "ADG Page header",
+    "symbolName": "Page-header / Title with actions [72px H]"
+  },
+  {
+    "name": "Page header (Title)",
+    "description": "The page header is a pattern that helps define the uppermost part a webpage or product.",
+    "libraryName": "ADG Page header",
+    "symbolName": "Page-header / Title [72px H]"
+  },
+  {
+    "name": "Page header (Bottom bar)",
+    "description": "The page header is a pattern that helps define the uppermost part a webpage or product.",
+    "libraryName": "ADG Page header",
+    "symbolName": "Page-header / Bottom bar [80px H]"
+  },
+  {
+    "name": "Toggle (16px, checked)",
+    "description": "Toggles are a quick way to view and switch between enabled or disabled states.",
+    "libraryName": "ADG Toggle",
+    "symbolName": "Toggles / [Light] 16px / Checked resting"
+  },
+  {
+    "name": "Toggle (16px, unchecked)",
+    "description": "Toggles are a quick way to view and switch between enabled or disabled states.",
+    "libraryName": "ADG Toggle",
+    "symbolName": "Toggles / [Light] 16px / Unchecked resting"
+  },
+  {
+    "name": "Toggle (20px, checked)",
+    "description": "Toggles are a quick way to view and switch between enabled or disabled states.",
+    "libraryName": "ADG Toggle",
+    "symbolName": "Toggles / [Light] 20px / Checked selected"
+  },
+  {
+    "name": "Toggle (20px, unchecked)",
+    "description": "Toggles are a quick way to view and switch between enabled or disabled states.",
+    "libraryName": "ADG Toggle",
+    "symbolName": "Toggles / [Light] 20px / Unchecked resting"
+  },
+  {
+    "name": "Spinner",
+    "description": "Use spinners to let users know that content is being loaded and will take an indeterminate amount of time.",
+    "libraryName": "ADG Spinner",
+    "symbolName": "Spinner / Medium "
+  },
+  {
+    "name": "Quick search",
+    "description": "Renders search results in navigation.",
+    "libraryName": "ADG Quick search",
+    "symbolName": "Search pane / Container"
+  },
+  {
+    "name": "Quick search item",
+    "description": "A single search result in quick search.",
+    "libraryName": "ADG Quick search",
+    "symbolName": "Search / Item - Container"
+  },
+  {
+    "name": "Breadcrumbs",
+    "description": "Breadcrumbs help users see their current location in relation to the rest of the website or application.",
+    "libraryName": "ADG Breadcrumbs",
+    "symbolName": "Breadcrumbs / Default"
+  },
+  {
+    "name": "Breadcrumbs (With icons)",
+    "description": "Breadcrumbs help users see their current location in relation to the rest of the website or application.",
+    "libraryName": "ADG Breadcrumbs",
+    "symbolName": "Breadcrumbs / With icons"
+  },
+  {
+    "name": "Datetime picker",
+    "description": "Use this field to allow users to select a date and/or time.",
+    "libraryName": "ADG Datetime picker",
+    "symbolName": "Datetime picker / Datetime picker / Default"
+  },
+  {
+    "name": "Datetime picker (Calendar)",
+    "description": "Select a date from a date picker.",
+    "libraryName": "ADG Datetime picker",
+    "symbolName": "Datetime picker / Calendar"
+  },
+  {
+    "name": "Datetime picker (Time)",
+    "description": "Select a time from a time picker.",
+    "libraryName": "ADG Datetime picker",
+    "symbolName": "Datetime picker / Time"
+  },
+  {
+    "name": "Date picker",
+    "description": "Use to select a single date from the calendar dialog.",
+    "libraryName": "ADG Datetime picker",
+    "symbolName": "Datetime picker / Date picker / Default"
+  },
+  {
+    "name": "Time picker",
+    "description": "Use the time picker to select a time from the single-select menu.",
+    "libraryName": "ADG Datetime picker",
+    "symbolName": "Datetime picker / Time picker / Default"
+  },
+  {
+    "name": "Pagination (3 pages)",
+    "description": "Use to help people move between a large number of items that are distributed across multiple pages whenever there are too many results to show at once.",
+    "libraryName": "ADG Pagination",
+    "symbolName": "Pagination / 3 pages"
+  },
+  {
+    "name": "Pagination (10 pages)",
+    "description": "Use to help people move between a large number of items that are distributed across multiple pages whenever there are too many results to show at once.",
+    "libraryName": "ADG Pagination",
+    "symbolName": "Pagination / 10 pages - Truncate both"
+  },
+  {
+    "name": "Range",
+    "description": "Use to select a numeric value between a pre-determined minimum and maximum.",
+    "libraryName": "ADG Range",
+    "symbolName": "Range / 50% default"
+  }
+]

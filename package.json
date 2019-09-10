@@ -1,0 +1,186 @@
+{
+  "name": "atlassian-sketch-plugin",
+  "version": "1.0.0",
+  "description": "Design your next Atlassian app with our component libraries and suite of Sketch tools.",
+  "homepage": "https://atlassian.design/",
+  "private": true,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/atlassian/sketch-plugin/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atlassian/sketch-plugin.git"
+  },
+  "scripts": {
+    "buildDev": "skpm-build",
+    "buildProd": "NODE_ENV='production' skpm-build",
+    "buildWatch": "skpm-build --watch",
+    "clean": "rm -rf *.sketchplugin/",
+    "logs": "skpm log",
+    "logsWatch": "skpm log -f",
+    "prebuildDev": "yarn clean",
+    "prebuildProd": "yarn clean",
+    "prebuildWatch": "yarn clean",
+    "standard-version": "standard-version",
+    "generateRss": "node ./scripts/plugin/generateRss.js",
+    "watchGuiPack": "./scripts/gui-pack/publish.js"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "standard-version": {
+    "scripts": {
+      "postbump": "./scripts/plugin/version.js",
+      "postcommit": "git add src/sketch/manifest.json && git commit --amend --no-edit"
+    }
+  },
+  "lint-staged": {
+    "*.json": [
+      "prettier --write"
+    ],
+    "*.js": [
+      "eslint --fix"
+    ]
+  },
+  "eslintConfig": {
+    "extends": [
+      "airbnb-base",
+      "plugin:import/warnings",
+      "plugin:import/errors",
+      "plugin:jsdoc/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "env": {
+      "es6": true
+    },
+    "parser": "babel-eslint",
+    "rules": {
+      "arrow-body-style": [
+        "error",
+        "as-needed"
+      ],
+      "prefer-arrow-callback": "error",
+      "no-unexpected-multiline": "error",
+      "quotes": [
+        "error",
+        "single",
+        {
+          "avoidEscape": true,
+          "allowTemplateLiterals": false
+        }
+      ]
+    },
+    "overrides": [
+      {
+        "files": [
+          "scripts/**/*.js",
+          "webpack.*.js"
+        ],
+        "rules": {
+          "import/no-extraneous-dependencies": [
+            "error",
+            {
+              "devDependencies": true
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "eslintIgnore": [
+    "*.sketchplugin"
+  ],
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "trailingComma": "all"
+  },
+  "babel": {
+    "presets": [
+      "@babel/env"
+    ],
+    "overrides": [
+      {
+        "test": "src/webview/**/*.js",
+        "presets": [
+          "@babel/preset-react"
+        ]
+      }
+    ]
+  },
+  "skpm": {
+    "manifest": "src/sketch/manifest.json",
+    "main": "atlassian-sketch-plugin.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "resources": [
+    "src/webview/**/*.js"
+  ],
+  "dependencies": {
+    "@emotion/core": "^10.0.17",
+    "@emotion/styled": "^10.0.17",
+    "@skpm/child_process": "^0.4.1",
+    "@skpm/dialog": "^0.3.0",
+    "@skpm/fs": "^0.2.5",
+    "@skpm/os": "^0.1.1",
+    "@skpm/path": "^0.1.4",
+    "@skpm/util": "^0.1.28",
+    "emotion-theming": "^10.0.17",
+    "fuse.js": "^3.4.5",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "regenerator-runtime": "^0.13.3",
+    "sketch-module-web-view": "^3.1.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-react": "^7.0.0",
+    "@commitlint/cli": "^8.1.0",
+    "@commitlint/config-conventional": "^8.1.0",
+    "@skpm/builder": "0.7.2",
+    "@skpm/extract-loader": "^2.0.2",
+    "abstract-sdk": "^2.0.0",
+    "babel-eslint": "^10.0.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "chalk": "^2.4.2",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-config-sketch": "^0.2.4",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsdoc": "^15.9.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^2.0.1",
+    "html-loader": "^0.5.5",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "minimist": "^1.2.0",
+    "node-fetch": "^2.6.0",
+    "prettier": "^1.18.2",
+    "semver": "^6.3.0",
+    "shelljs": "^0.8.3",
+    "standard-version": "^7.0.0",
+    "svg-inline-loader": "^0.8.0",
+    "webpack": "^4.39.3",
+    "webpack-merge": "^4.2.2",
+    "xml2js": "^0.4.22"
+  }
+}

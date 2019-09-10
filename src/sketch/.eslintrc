@@ -1,0 +1,52 @@
+{
+  "extends": ["sketch", "plugin:prettier/recommended"],
+  "rules": {
+    "no-underscore-dangle": "off",
+    "import/no-unresolved": [
+      "error",
+      {
+        "ignore": ["^sketch$", "^sketch/.*$"]
+      }
+    ],
+    // These are disabled by eslint-config-prettier, but don't need to be
+    "arrow-body-style": ["error", "as-needed"],
+    "prefer-arrow-callback": "error",
+    "no-unexpected-multiline": "error",
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": false
+      }
+    ]
+  },
+  "globals": {
+    "fetch": false,
+    "__command": false,
+    "CATextLayer": false,
+    "COScript": false,
+    "MOClassDescription": false,
+    "MOPointer": false,
+    "NSBezelStyleCircular": false,
+    "NSClassFromString": false,
+    "NSClosableWindowMask": false,
+    "NSFloatingWindowLevel": false,
+    "NSFocusRingTypeNone": false,
+    "NSFullSizeContentViewWindowMask": false,
+    "NSHomeDirectory": false,
+    "NSMakePoint": false,
+    "NSSelectorFromString": false,
+    "NSTextAlignmentCenter": false,
+    "NSTexturedBackgroundWindowMask": false,
+    "NSTitledWindowMask": false,
+    "NSWindowCloseButton": false,
+    "NSWindowMiniaturizeButton": false,
+    "NSWindowZoomButton": false,
+    "NSURLSession": false,
+    "NSPNGFileType": false,
+    "NSWindowCollectionBehaviorMoveToActiveSpace": false,
+    "NSWidth": false,
+    "NSHeight": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "extends": ["airbnb", "plugin:prettier/recommended", "prettier/react"],
+  "plugins": ["react-hooks"],
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    // These are disabled by eslint-config-prettier, but don't need to be
+    "arrow-body-style": ["error", "as-needed"],
+    "prefer-arrow-callback": "error",
+    "no-unexpected-multiline": "error",
+    "quotes": [
+      "error",
+      "single",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": false
+      }
+    ]
+  }
+}

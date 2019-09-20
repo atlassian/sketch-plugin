@@ -43,9 +43,9 @@ jobs:
       - name: Update RSS file
         run: |
           yarn generateRss
-          sh -c "rsync --quiet -e 'ssh -o StrictHostKeyChecking=no -i id_rsa' appcast.xml '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH_BASE_ECOSYSTEM }}/plugin/'"
+          sh -c "rsync --quiet -e 'ssh -o StrictHostKeyChecking=no -i id_rsa' appcast.xml '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH_BASE_INTERNAL }}/plugin/'"
       - name: Build plugin
         run: |
           yarn buildProd
           zip -r plugin.zip atlassian-sketch-plugin.sketchplugin
-          sh -c "rsync --quiet -e 'ssh -o StrictHostKeyChecking=no -i id_rsa' plugin.zip '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH_BASE_ECOSYSTEM }}/plugin/'"
+          sh -c "rsync --quiet -e 'ssh -o StrictHostKeyChecking=no -i id_rsa' plugin.zip '${{ secrets.REMOTE_USER }}@${{ secrets.REMOTE_HOST }}:${{ secrets.REMOTE_PATH_BASE_INTERNAL }}/plugin/'"

@@ -26,8 +26,10 @@ const {
   SHOULD_FORCE_PUBLISH,
 } = process.env;
 
+const URL_BASE_GUI_PACK = `${URL_BASE}/gui-pack`;
+
 const INTERVAL_POLL = 10 * 60 * 1000; // 10 minutes
-const URL_ICON = `${URL_BASE}/icon.png`;
+const URL_ICON = `${URL_BASE_GUI_PACK}/icon.png`;
 
 /**
  * Determine when the GUI Pack was last published by contacting the server.
@@ -35,7 +37,7 @@ const URL_ICON = `${URL_BASE}/icon.png`;
  * @returns {Date} - Date when the GUI Pack was last published.
  */
 const getLastPublishDate = async () => {
-  const response = await fetch(`${URL_BASE}/index.json`);
+  const response = await fetch(`${URL_BASE_GUI_PACK}/index.json`);
 
   if (!response.ok || SHOULD_FORCE_PUBLISH) {
     // Reupload everything
@@ -174,7 +176,7 @@ const generateRSSFiles = async (files, buildDirName) => {
       const rssXml = new xml2js.Builder().buildObject(
         rssTemplate(
           libraryName,
-          `${URL_BASE}/libraries/${sanitizedLibraryName}.sketch`,
+          `${URL_BASE_GUI_PACK}/libraries/${sanitizedLibraryName}.sketch`,
           new Date(publishDate),
           sha,
           size,
@@ -194,7 +196,7 @@ const generateRSSFiles = async (files, buildDirName) => {
  * @returns {Array} - A list of URLs to library RSS feeds.
  */
 const generateLibraryIndex = async files =>
-  files.map(({ name }) => `${URL_BASE}/rss/${sanitize(name)}.xml`);
+  files.map(({ name }) => `${URL_BASE_GUI_PACK}/rss/${sanitize(name)}.xml`);
 
 /**
  * Generate an index of templates.
@@ -209,7 +211,7 @@ const generateLibraryIndex = async files =>
 const generateTemplateIndex = async files =>
   files.map(({ name, updatedAt }) => ({
     name,
-    url: `${URL_BASE}/templates/${sanitize(name)}.sketch`,
+    url: `${URL_BASE_GUI_PACK}/templates/${sanitize(name)}.sketch`,
     pubDate: new Date(updatedAt).toISOString(),
   }));
 

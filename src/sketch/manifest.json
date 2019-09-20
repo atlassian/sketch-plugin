@@ -2,7 +2,7 @@
   "name": "Atlassian Vendor Sketch Plugin",
   "identifier": "com.atlassian.vendor.sketch.plugin",
   "description": "Design your next Atlassian app with our component libraries and suite of Sketch tools.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "icon": "logo.png",
   "appcast": "https://ecosystem.atlassian.design/tools/sketch/plugin/appcast.xml",
   "suppliesData": true,
@@ -65,21 +65,14 @@
       "script": "handler/gui-pack/syncGuiPack.js",
       "handlers": {
         "run": "forceSyncGuiPack",
-        "actions": {
-          "HandleURL": "forceSyncGuiPack"
-        }
+        "actions": { "HandleURL": "forceSyncGuiPack" }
       }
     },
     {
       "name": "Symbol Palette...",
       "identifier": "symbol-palette",
       "script": "handler/symbol-palette/launchWebView.js",
-      "handlers": {
-        "run": "default",
-        "actions": {
-          "Startup": "onStartup"
-        }
-      },
+      "handlers": { "run": "default", "actions": { "Startup": "onStartup" } },
       "shortcut": "cmd shift p"
     },
     {
@@ -88,19 +81,12 @@
       "script": "handler/fonts/installFonts.js",
       "handlers": {
         "run": "forceInstallFonts",
-        "actions": {
-          "Startup": "default",
-          "HandleURL": "forceInstallFonts"
-        }
+        "actions": { "Startup": "default", "HandleURL": "forceInstallFonts" }
       }
     },
     {
       "script": "handler/data/supplyData.js",
-      "handlers": {
-        "actions": {
-          "Shutdown": "onShutdown"
-        }
-      }
+      "handlers": { "actions": { "Shutdown": "onShutdown" } }
     },
     {
       "script": "handler/data/genericSupplier.js",

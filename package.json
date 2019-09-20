@@ -1,6 +1,6 @@
 {
   "name": "atlassian-sketch-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Design your next Atlassian app with our component libraries and suite of Sketch tools.",
   "homepage": "https://atlassian.design/",
   "private": true,

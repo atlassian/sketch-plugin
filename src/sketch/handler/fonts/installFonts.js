@@ -101,9 +101,9 @@ const installFonts = async () => {
   const fiber = Async.createFiber();
 
   try {
-    const installedFonts = toArray(NSFontManager.sharedFontManager().availableFontFamilies()).map(
-      fontName => String(fontName),
-    );
+    const installedFonts = toArray(
+      NSFontManager.sharedFontManager().availableFontFamilies(),
+    ).map(fontName => String(fontName));
     const promises = [];
 
     if (!installedFonts.includes(FONT_NAME_ROBOTO)) {

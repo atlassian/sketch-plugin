@@ -934,11 +934,6 @@
   dependencies:
     find-up "^4.0.0"
 
-"@elasticprojects/abstract-cli@^2.3.0":
-  version "2.9.0"
-  resolved "https://registry.yarnpkg.com/@elasticprojects/abstract-cli/-/abstract-cli-2.9.0.tgz#9a27e17ce379e0cc1b18f6d2b0f2e890dfb019e8"
-  integrity sha512-ri8fIQqdijqF4eeV2Lf5wd3cf0LHJpO2gR2nYFEUlws2+V4ntbq5jVxZjhn5Mgs49P40pv4rVKXtwhufrCnk4w==
-
 "@emotion/cache@^10.0.17":
   version "10.0.17"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.17.tgz#3491a035f62f276620d586677bfc3d4fad0b8472"
@@ -1439,13 +1434,12 @@ abbrev@1:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
-abstract-sdk@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/abstract-sdk/-/abstract-sdk-3.1.0.tgz#d3c177d00ba0fdd63a734cc3c2bd0b8464c30c9a"
-  integrity sha512-s99vKSZrcu4A6P9x40kwhih8hPdKq9Ed0JG8lera8xwAgN8FoFOTBhLPktDQQSI1MzuHPHHUyOVDjHSo/JlNew==
+abstract-sdk@^1.0.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/abstract-sdk/-/abstract-sdk-1.9.0.tgz#54eb809ef56496418b5d6f754bfddeaa377b2358"
+  integrity sha512-9HbSGUI2V9uXkGKBFW08FJS3qTJGaPy98qEnFDa9fJGMOPe+YFMTXvs9s70J/uWpSlyhtQRZ4v3cUflJ6o62ow==
   dependencies:
     "@babel/runtime-corejs2" "^7.3.4"
-    "@elasticprojects/abstract-cli" "^2.3.0"
     cross-fetch "^3.0.1"
     debug "^4.0.1"
     flow-typed "^2.5.1"

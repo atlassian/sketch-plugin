@@ -15,6 +15,13 @@ import { SETTING_ADG_LIBRARY_IDS } from '../../util/settings';
 const { Document } = Dom;
 
 /**
+ * @param {string} libraryId Sketch ID of the library we're installing.
+ * @returns {boolean} Whether the symbol we're inserting comes from an ADG library.
+ */
+const isAdgLibrary = libraryId =>
+  Settings.settingForKey(SETTING_ADG_LIBRARY_IDS).includes(libraryId);
+
+/**
  * Handle the 'lost focus' event.
  *
  * This is our shortcut to figuring out when a symbol has been inserted. We have to do this, because
@@ -28,12 +35,14 @@ const { Document } = Dom;
  * @param {object} context - Sketch context.
  */
 export const onHandlerLostFocus = context => {
-  if (context.actionContext.name == 'InsertSymbol') {
-    const adgLibraryIds = Settings.settingForKey(SETTING_ADG_LIBRARY_IDS);
+  if (
+    context.actionContext.name == 'InsertSymbol' ||
+    context.actionContext.name == 'InsertComponent'
+  ) {
     const [{ master }] = Document.getSelectedDocument().selectedLayers.layers;
     const { name: libraryName, id: libraryId } = master.getLibrary();
 
-    if (adgLibraryIds.includes(libraryId)) {
+    if (isAdgLibrary(libraryId)) {
       event(context, CATEGORY_SYMBOL, `${libraryName} / ${master.name}`, LABEL_GUI_PACK);
     }
 
@@ -54,11 +63,10 @@ export const onHandlerLostFocus = context => {
  * @param {object} context - Sketch context.
  */
 export const onUnlinkFromLibrary = context => {
-  const adgLibraryIds = Settings.settingForKey(SETTING_ADG_LIBRARY_IDS);
   const [{ master }] = Document.getSelectedDocument().selectedLayers.layers;
   const { name: libraryName, id: libraryId } = master.getLibrary();
 
-  if (adgLibraryIds.includes(libraryId)) {
+  if (isAdgLibrary(libraryId)) {
     event(context, CATEGORY_UNLINK, `${libraryName} / ${master.name}`, LABEL_GUI_PACK);
   }
 };
@@ -75,14 +83,13 @@ export const onUnlinkFromLibrary = context => {
  * @param {object} context - Sketch context.
  */
 export const onConvertSymbolOrDetachInstances = context => {
-  const adgLibraryIds = Settings.settingForKey(SETTING_ADG_LIBRARY_IDS);
   const [{ master }] = Document.getSelectedDocument().selectedLayers.layers;
   const library = master.getLibrary();
 
   if (library) {
     const { name: libraryName, id: libraryId } = library;
 
-    if (adgLibraryIds.includes(libraryId)) {
+    if (isAdgLibrary(libraryId)) {
       event(context, CATEGORY_UNLINK, `${libraryName} / ${master.name}`, LABEL_GUI_PACK);
     }
   }

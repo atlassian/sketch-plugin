@@ -57,10 +57,12 @@ const getLastPublishDate = async () => {
  */
 const getPublishDate = async projectId =>
   new Date(
-    (await abstract.commits.list({
-      projectId,
-      branchId: 'master',
-    }))[0].time,
+    (
+      await abstract.commits.list({
+        projectId,
+        branchId: 'master',
+      })
+    )[0].time,
   );
 
 /**
@@ -286,7 +288,10 @@ const publish = async () => {
       ]);
 
       console.log('✒️  Generating RSS files for libraries');
-      await generateRSSFiles(changedFiles.filter(({ isLibrary }) => isLibrary), buildDirName);
+      await generateRSSFiles(
+        changedFiles.filter(({ isLibrary }) => isLibrary),
+        buildDirName,
+      );
 
       console.log('👆  Pushing files to remote');
       shell.exec(

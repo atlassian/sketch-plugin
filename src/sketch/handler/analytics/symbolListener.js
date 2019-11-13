@@ -35,7 +35,10 @@ const isAdgLibrary = libraryId =>
  * @param {object} context - Sketch context.
  */
 export const onHandlerLostFocus = context => {
-  if (context.actionContext.name == 'InsertSymbol') {
+  if (
+    context.actionContext.name == 'InsertSymbol' ||
+    context.actionContext.name == 'InsertComponent'
+  ) {
     const [{ master }] = Document.getSelectedDocument().selectedLayers.layers;
     const { name: libraryName, id: libraryId } = master.getLibrary();
 

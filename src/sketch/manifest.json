@@ -2,7 +2,7 @@
   "name": "Atlassian Vendor Sketch Plugin",
   "identifier": "com.atlassian.vendor.sketch.plugin",
   "description": "Design your next Atlassian app with our component libraries and suite of Sketch tools.",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "icon": "logo.png",
   "appcast": "https://ecosystem.atlassian.design/tools/sketch/plugin/appcast.xml",
   "suppliesData": true,

@@ -2,151 +2,151 @@
   {
     "key": "ADR",
     "name": "Android App",
-    "typeName": "Software",
+    "typeName": "Classic Software",
     "typeIcon": "software"
   },
   {
     "key": "CS",
     "name": "Customer Support",
-    "typeName": "Service Desk",
+    "typeName": "Next-gen Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "DMS",
     "name": "Digital Marketing Support",
-    "typeName": "Service Desk",
+    "typeName": "Classic Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "EO",
     "name": "Employee Onboarding",
-    "typeName": "Business",
+    "typeName": "Next-gen Business",
     "typeIcon": "business"
   },
   {
     "key": "FWS",
     "name": "Facilities Support",
-    "typeName": "Service Desk",
+    "typeName": "Next-gen Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "FIN",
     "name": "Finance Service Desk",
-    "typeName": "Service Desk",
+    "typeName": "Classic Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "FME",
     "name": "Financial Month End",
-    "typeName": "Business",
+    "typeName": "Classic Business",
     "typeIcon": "business"
   },
   {
     "key": "HCT",
     "name": "HR Candidate Tracking",
-    "typeName": "Business",
+    "typeName": "Next-gen Business",
     "typeIcon": "business"
   },
   {
     "key": "HR",
     "name": "HR Service Desk",
-    "typeName": "Service Desk",
+    "typeName": "Next-gen Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "ICM",
     "name": "Infrastructure Change Management",
-    "typeName": "Service Desk",
+    "typeName": "Classic Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "IOS",
     "name": "iOS App ",
-    "typeName": "Software",
+    "typeName": "Next-gen Software",
     "typeIcon": "software"
   },
   {
     "key": "ITOPS",
     "name": "IT Operations",
-    "typeName": "Service Desk",
+    "typeName": "Next-gen Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "ITS",
     "name": "IT Support",
-    "typeName": "Service Desk",
+    "typeName": "Classic Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "LEGT",
     "name": "Legal Service Desk",
-    "typeName": "Service Desk",
+    "typeName": "Next-gen Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "MB",
     "name": "Marketing Blog",
-    "typeName": "Business",
+    "typeName": "Classic Business",
     "typeIcon": "business"
   },
   {
     "key": "MAC",
     "name": "Marketing Creatives",
-    "typeName": "Business",
+    "typeName": "Next-gen Business",
     "typeIcon": "business"
   },
   {
     "key": "OA",
     "name": "Office Admin Service Desk",
-    "typeName": "Service Desk",
+    "typeName": "Classic Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "PERF",
     "name": "Performance Engineering",
-    "typeName": "Software",
+    "typeName": "Next-gen Software",
     "typeIcon": "software"
   },
   {
     "key": "PLAT",
     "name": "Platform",
-    "typeName": "Software",
+    "typeName": "Classic Software",
     "typeIcon": "software"
   },
   {
     "key": "PM",
     "name": "Portfolio Management",
-    "typeName": "Software",
+    "typeName": "Next-gen Software",
     "typeIcon": "software"
   },
   {
     "key": "SOPS",
     "name": "Sales Ops",
-    "typeName": "Service Desk",
+    "typeName": "Next-gen Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "WEB",
     "name": "Team Travel Web",
-    "typeName": "Software",
+    "typeName": "Classic Software",
     "typeIcon": "software"
   },
   {
     "key": "BG",
     "name": "Beyond Gravity",
-    "typeName": "Software",
+    "typeName": "Next-gen Software",
     "typeIcon": "software"
   },
   {
     "key": "TRS",
     "name": "Travel & Relocation Support",
-    "typeName": "Service Desk",
+    "typeName": "Classic Service Desk",
     "typeIcon": "service-desk"
   },
   {
     "key": "TSD",
     "name": "Travel Service Desk",
-    "typeName": "Service Desk",
+    "typeName": "Next-gen Service Desk",
     "typeIcon": "service-desk"
   }
 ]

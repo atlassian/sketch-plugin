@@ -14,7 +14,7 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const abstract = new AbstractSDK.Client({
-  transportMode: 'cli',
+  transportMode: ['cli'],
 });
 
 const {

@@ -984,6 +984,11 @@
   dependencies:
     find-up "^4.0.0"
 
+"@elasticprojects/abstract-cli@^2.3.0":
+  version "2.30.0"
+  resolved "https://registry.yarnpkg.com/@elasticprojects/abstract-cli/-/abstract-cli-2.30.0.tgz#68ee486e0b47e4ab1c942b27548c62e73015d33a"
+  integrity sha512-N0dUnyMcifzFKOW4iwr0TWjVnV/SKtSyx1sSjycyvfmojnG5HlqhUcUN6Fiyuf6wM6wfsbysOo03P0Sju4a6kw==
+
 "@emotion/cache@^10.0.17":
   version "10.0.17"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.17.tgz#3491a035f62f276620d586677bfc3d4fad0b8472"
@@ -1480,15 +1485,17 @@ abbrev@1:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
-abstract-sdk@^1.0.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/abstract-sdk/-/abstract-sdk-1.9.0.tgz#54eb809ef56496418b5d6f754bfddeaa377b2358"
-  integrity sha512-9HbSGUI2V9uXkGKBFW08FJS3qTJGaPy98qEnFDa9fJGMOPe+YFMTXvs9s70J/uWpSlyhtQRZ4v3cUflJ6o62ow==
+abstract-sdk@^7.0.0:
+  version "7.0.1"
+  resolved "https://registry.yarnpkg.com/abstract-sdk/-/abstract-sdk-7.0.1.tgz#55c0dacea08767dc74971e1293ca3eca06d2b5e3"
+  integrity sha512-AY574f4ImIex8dl25nOS60tbZivUhQiotyRiGYblnsiXWg9iRod4xhXB9gI8vahk+HhWArUfD0Uef4WGsAH/pg==
   dependencies:
     "@babel/runtime-corejs2" "^7.3.4"
+    "@elasticprojects/abstract-cli" "^2.3.0"
     cross-fetch "^3.0.1"
     debug "^4.0.1"
     flow-typed "^2.5.1"
+    js-sha256 "^0.9.0"
     query-string "^6.1.0"
     uuid "^3.3.2"
 
@@ -5150,6 +5157,11 @@ js-levenshtein@^1.1.3:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/js-levenshtein/-/js-levenshtein-1.1.6.tgz#c6cee58eb3550372df8deb85fad5ce66ce01d59d"
   integrity sha512-X2BB11YZtrRqY4EnQcLX5Rh373zbK4alC1FW7D7MBhL2gtcC17cTnr6DmfHZeS0s2rTHjUTMMHfG7gO8SSdw+g==
+
+js-sha256@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/js-sha256/-/js-sha256-0.9.0.tgz#0b89ac166583e91ef9123644bd3c5334ce9d0966"
+  integrity sha512-sga3MHh9sgQN2+pJ9VYZ+1LPwXOxuBJBA5nrR5/ofPfuiJBE2hnjsaN8se8JznOmGLN2p49Pe5U/ttafcs/apA==
 
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"

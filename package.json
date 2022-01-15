@@ -176,7 +176,7 @@
     "node-fetch": "^2.6.0",
     "prettier": "^1.19.1",
     "semver": "^6.3.0",
-    "shelljs": "^0.8.3",
+    "shelljs": "^0.8.5",
     "standard-version": "^7.0.0",
     "svg-inline-loader": "^0.8.0",
     "webpack": "^4.41.2",
